@@ -9,123 +9,58 @@ course_term: "MSSE 601 – Software Engineering Fundamentals | Fall 2026"
 week_owned: "Week 4 – Project Component and UI Design"
 team: "SEF 1 – NCM Innovators"
 decision_status: "Selected"
-decision_summary: "Use a table-based inventory interface to help staff find, compare, and manage bike inventory efficiently."
+decision_summary: "A table-based inventory interface with search and filters to help staff compare e-bikes across four store locations."
 permalink: /msse601/choosing-a-table-based-inventory-interface/
 ---
 
-# Portfolio Decision Record: Choosing a Table-Based Inventory Interface
+<div class="record-document">
 
-**Name:** Minnette Johnson  
-**Course:** MSSE 601 – Software Engineering Fundamentals  
-**Term:** Fall 2026  
-**Week:** Week 4 – Project Component and UI Design  
-**Area Owned:** Interface Design and Design Reasoning  
-**Project:** Golden Bike Shop System  
-**Team:** SEF 1 – NCM Innovators
+<p class="record-document-label">PORTFOLIO DECISION RECORD</p>
 
-## Context
+# Choosing a Table-Based Inventory Interface
 
-The Golden Bike Shop System needs an inventory interface that allows staff to review available bikes, check their status, and access relevant inventory actions. The interface should support everyday work without making staff navigate through unnecessary screens or visual elements.
+<div class="record-details">
+  <p><strong>Name:</strong> Minnette Johnson</p>
+  <p><strong>Course:</strong> MSSE 601 – Software Engineering Fundamentals</p>
+  <p><strong>Term:</strong> Fall 2026</p>
+  <p><strong>Week:</strong> Week 4 – Project Component and UI Design</p>
+  <p><strong>Area Owned:</strong> Interface Design and Design Reasoning</p>
+  <p><strong>Project:</strong> Golden Bike Shop System</p>
+  <p><strong>Team:</strong> SEF 1 – NCM Innovators</p>
+</div>
 
-The interface design decision matters because inventory information needs to be easy to scan and compare. Staff should be able to identify a bike, understand its current status, and locate the appropriate action without unnecessary effort.
+## 1. Context
 
-The main question was which interface structure would present inventory information clearly while remaining practical to use and maintain.
+The Golden Bike Shop system requires staff to manage e-bike inventory across four store locations. Store clerks need to locate available bikes, compare their status and location, review bike details, and initiate rentals without navigating unnecessarily between screens. As the Interface Design and Design Reasoning Lead, I evaluated how the inventory information should be presented to support these tasks. The central design question was whether staff should view bikes individually through a card-based interface or compare multiple bikes in a table. This decision mattered because inventory management is a frequent operational task. The interface needed to make relevant information easy to find while reducing unnecessary navigation and the risk of selecting a bike with the wrong status or location.
 
-## Options Considered
+## 2. Options
 
-### Option 1: Table-Based Inventory Interface
+- **Option 1: Card-Based Inventory Interface**
+  - Each bike would appear in its own card, allowing its information to be presented individually with greater visual emphasis. However, comparing several bikes could require staff to scan multiple cards and potentially scroll through the inventory.
+- **Option 2: Table-Based Inventory Interface**
+  - Multiple bikes would appear in rows, with consistent columns for bike, type, status, rental status, location, and available actions. Search and filter controls would help staff narrow the inventory to relevant bikes. The main disadvantage would be greater information density, which could make the screen feel crowded.
 
-A table presents inventory items in rows, with consistent columns for important information. Potential fields include bike name, bike type, availability, rental status, details, and available actions. Search and filtering can help staff locate specific items.
+## 3. Decision
 
-This approach emphasizes information density, consistency, and direct comparison between inventory items.
+I selected the table-based inventory layout for the Golden Bike Shop inventory screen, supported by search and filter controls. The table presents key bike information together so staff can compare multiple bikes without opening each one individually. The design also provides a consistent place to identify a bike's status and location and access its available actions. This choice was based on the primary staff workflow rather than visual preference alone. The inventory screen needed to support quick comparison and selection, so I prioritized information visibility and efficient navigation over the more individualized presentation offered by cards.
 
-### Option 2: Card-Based Inventory Interface
+## 4. Reasoning
 
-A card-based interface presents each bike as an individual visual item. Cards can emphasize photographs, descriptive details, and prominent actions.
+I evaluated the alternatives against the system's inventory requirements and the way staff would use the interface during daily operations. The table-based design supports recognition rather than recall because staff can see several bikes and their relevant attributes together. This reduces the need to remember information from one screen while inspecting another. It also supports faster comparison of status and location, helping staff identify suitable bikes before initiating a rental.
 
-This can be useful when users need to browse visually. However, displaying many cards can require more screen space and make direct comparison between inventory items less efficient.
+The card-based alternative offered a legitimate benefit: each bike could receive more visual space, making individual details easier to emphasize. However, the principal inventory task involved comparing multiple bikes, not simply inspecting one bike at a time. I therefore judged the table to be the better fit for the primary workflow. I also recognized that a table could become visually dense. I addressed this trade-off by incorporating search and filtering controls, allowing staff to narrow the displayed results rather than relying entirely on scanning every row. The decision was therefore a balance between comparison efficiency and information density. I accepted the denser presentation because it better supported the inventory task, while using search and filters to make the information easier to navigate.
 
-### Option 3: Hybrid Dashboard and Inventory Interface
+## 5. Consequences
 
-A hybrid approach combines summary cards or dashboard elements with a separate inventory list.
+The decision provides staff with a consolidated inventory view that supports searching, filtering, comparing bike information, and accessing relevant actions. It also establishes a consistent starting point for the related Bike Details/Edit and New Rental workflows. The main cost is that a table presents more information simultaneously than an individual card. If the inventory grows substantially or staff begin using smaller screens, readability and navigation may become more challenging. The design should therefore be revisited if usability testing shows that staff struggle to locate information, compare bikes, or use the interface on different screen sizes. Possible improvements could include responsive table behavior, adjustable columns, or a card-based alternative for narrow displays without abandoning the table's advantages for desktop inventory management.
 
-This can provide a broad overview and detailed inventory information. However, it introduces additional interface elements and may increase implementation and maintenance complexity without necessarily improving the core inventory workflow.
+## Evidence and Traceability
 
-## Decision
+- **Week:** Week 4 – Project Component and UI Design.
+- **Individual Ownership:** Interface Design and Design Reasoning Lead, as identified in the Week 4 AI Use Record, Entry 4.
+- **Deliverable:** Golden Bike Shop Project – Week 4 Project Component and UI Design, submitted September 20, 2026.
+- **Decision Location:** Section 5, Team Decision Record, Decision 1: Inventory Layout.
+- **Supporting Evidence:** Section 2, Screen 1 – Inventory Management; Section 3, Design Reasoning; and the AI Use Record, Entry 4.
+- **AI-Use Disclosure:** ChatGPT was used to compare table-based and card-based inventory designs against the project requirements and identify their respective strengths, weaknesses, and trade-offs. I used that analysis to evaluate the alternatives and strengthen the written rationale. The selected table-based design was retained because it best supported the staff workflow of comparing multiple bikes. The AI assisted with analysis; it did not replace my responsibility for evaluating the alternatives and documenting the design decision.
 
-I selected a **table-based inventory interface** for the Golden Bike Shop System.
-
-The interface will organize inventory items into consistent rows and columns, allowing staff to scan records, compare bike information, check availability or rental status, and access relevant actions. Search and filtering should support efficient retrieval as the inventory grows.
-
-The decision prioritizes the practical management of inventory over a presentation focused primarily on visual browsing.
-
-## Reasoning
-
-The table-based approach best fits the primary task: managing and reviewing structured inventory information.
-
-First, a table supports comparison. When key details appear in consistent columns, staff can compare several bikes without opening separate cards or screens.
-
-Second, a table uses screen space efficiently. It can present more inventory records in a single view than a card-based layout, particularly when users are working with a larger collection of bikes.
-
-Third, the structure supports predictable interaction. Staff can learn where information appears and where to find actions because each row follows the same pattern.
-
-Fourth, the approach is appropriate for structured data. Inventory attributes such as bike type, availability, and rental status are easier to scan when presented consistently.
-
-Finally, the table can be extended with search, filtering, clear status indicators, and responsive behavior as the system develops.
-
-A card-based interface remains a reasonable option for a workflow centered on photographs or visual browsing. A hybrid interface could also be justified if dashboard summaries become an important user requirement. For the current inventory-management need, however, the additional visual elements and complexity do not provide enough benefit to outweigh the advantages of a table.
-
-## Consequences and Trade-Offs
-
-### Expected Benefits
-
-- Staff can compare inventory items using consistent columns.
-- More records can be visible at once, reducing unnecessary navigation.
-- Availability and rental status can be presented in a predictable location.
-- Search and filtering can make larger inventories easier to navigate.
-- A consistent structure can simplify interface development and maintenance.
-
-### Limitations and Risks
-
-- Tables can become difficult to read on small screens if too many columns are displayed.
-- Dense information can overwhelm users if spacing, typography, and status indicators are poorly designed.
-- A table may be less engaging than cards when photographs and visual browsing are important.
-- Actions must remain clear and accessible without making each row visually cluttered.
-
-### Mitigation
-
-The interface should use readable typography, sufficient spacing, clear column labels, and consistent status indicators. Search and filtering should help users narrow the inventory when needed.
-
-Responsive behavior should also be considered so the interface remains usable on smaller screens. Depending on the final implementation, this may require horizontal scrolling, selective column visibility, or an alternative compact presentation.
-
-These considerations should be addressed through implementation and usability feedback rather than assuming that a table will be effective in every context.
-
-## Review Conditions
-
-The decision should be reviewed if testing or staff feedback shows that users struggle to locate information, understand status indicators, or complete common inventory tasks.
-
-It should also be reconsidered if the system's primary workflow changes toward image-led browsing, mobile-first use, or a dashboard that provides meaningful operational information.
-
-Useful review questions include:
-
-- Can staff find a particular bike quickly?
-- Can users compare availability and rental status without confusion?
-- Are the available actions easy to identify?
-- Does the interface remain usable on smaller screens?
-- Do search and filtering support the size and needs of the inventory?
-
-The table-based decision should remain in place while it supports the workflow effectively. It should not be treated as permanent if evidence demonstrates that another approach would better meet user needs.
-
-## Evidence and Authorship
-
-This record documents my contribution to interface design and design reasoning for the Golden Bike Shop System as part of MSSE 601.
-
-The decision was made by comparing the table-based, card-based, and hybrid approaches against the inventory workflow, information density, usability, and implementation complexity. The rationale and trade-offs are recorded so that the decision can be evaluated and revisited as the project evolves.
-
-**AI-use disclosure:** AI assistance may be used to support the organization, editing, or presentation of this record. The project decision, evaluation of alternatives, and responsibility for the submitted work remain with me. Any course-specific disclosure requirements should also be followed.
-
-## Final Reflection
-
-This decision demonstrates that interface design is not only about appearance. It requires understanding what users need to accomplish and selecting a structure that supports those tasks.
-
-For the Golden Bike Shop System, a table-based inventory interface provides a practical starting point for managing structured records. The choice is based on the current requirements, while usability feedback and future changes will determine whether it remains the best fit.
+</div>
