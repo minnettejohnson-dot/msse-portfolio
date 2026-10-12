@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<section class="document-page">
+  <div class="container document-shell">
+    <a class="document-backlink" href="{{ '/' | relative_url }}#portfolio">← Back to my portfolio</a>
+
+    <header class="document-header">
+      <p class="section-label">{{ page.course_short | default: 'Graduate work' | escape }}</p>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="document-code">{{ page.record_id | escape }}</p>
+      <p class="document-subtitle">{{ page.subtitle | escape }}</p>
+    </header>
+
+    <dl class="document-meta">
+      <div>
+        <dt>Name</dt>
+        <dd>{{ page.author | escape }}</dd>
+      </div>
+      <div>
+        <dt>Course / Term</dt>
+        <dd>{{ page.course_term | escape }}</dd>
+      </div>
+      <div>
+        <dt>Week and area owned</dt>
+        <dd>{{ page.week_owned | escape }}</dd>
+      </div>
+      <div>
+        <dt>Team</dt>
+        <dd>{{ page.team | escape }}</dd>
+      </div>
+    </dl>
+
+    <article class="document-content">
+      {{ content }}
+    </article>
+  </div>
+</section>

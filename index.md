@@ -57,7 +57,7 @@ permalink: /
         <h3>Hybrid Modular Architecture</h3>
         <p>This decision record explores a hybrid modular monolith with an independently deployed Telemetry Service. It looks at the options, why this approach was selected, and the trade-offs that come with the decision.</p>
       </div>
-      <a class="record-link" href="https://github.com/minnettejohnson-dot/msse-portfolio/blob/main/msse601/MSSE601-ADR-hybrid-architecture.md" target="_blank" rel="noopener noreferrer">Read the record ↗</a>
+      <a class="record-link" href="{{ '/msse601/MSSE601-ADR-hybrid-architecture/' | relative_url }}">Read the record ↗</a>
     </article>
 
     <p class="coming-note">This collection will grow as I move through the programme. I’ll add new records when there is a decision or lesson worth revisiting.</p>
