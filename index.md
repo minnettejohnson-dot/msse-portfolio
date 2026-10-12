@@ -50,15 +50,23 @@ permalink: /
       <p class="section-intro">My portfolio decision records capture more than a final answer. They make space for the problem, the alternatives I considered, the reasons behind a choice, and what I learned along the way.</p>
     </div>
 
-    <article class="record">
-      <div class="record-number" aria-hidden="true">01</div>
-      <div>
-        <div class="record-meta">MSSE-601 · Software Engineering Foundations</div>
-        <h3>Hybrid Modular Architecture</h3>
-        <p>This decision record explores a hybrid modular monolith with an independently deployed Telemetry Service. It looks at the options, why this approach was selected, and the trade-offs that come with the decision.</p>
-      </div>
-      <a class="record-link" href="{{ '/msse601/MSSE601-ADR-hybrid-architecture/' | relative_url }}">Read the record ↗</a>
-    </article>
+   <article class="record">
+  <div class="record-number" aria-hidden="true">01</div>
+  <div>
+    <div class="record-meta">MSSE-601 · Software Engineering Foundations · Week 4</div>
+    <h3>Choosing a Table-Based Inventory Interface</h3>
+    <p>
+      This decision record explains the selection of a table-based inventory
+      interface for the Golden Bike Shop System. It compares alternative
+      interface approaches, documents the reasoning behind the decision,
+      and considers usability, maintainability, and responsive design trade-offs.
+    </p>
+  </div>
+  <a class="record-link"
+     href="{{ '/msse601/choosing-a-table-based-inventory-interface/' | relative_url }}">
+    Read the record ↗
+  </a>
+</article>
 
     <p class="coming-note">This collection will grow as I move through the programme. I’ll add new records when there is a decision or lesson worth revisiting.</p>
   </div>
