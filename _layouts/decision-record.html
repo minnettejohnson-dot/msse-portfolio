@@ -1,16 +1,16 @@
----
----
+
 <article class="document-page">
   <div class="container">
     <header class="document-header">
       <a class="document-back" href="{{ '/' | relative_url }}#portfolio">
-        ← Back to portfolio
+        &larr; Back to portfolio
       </a>
 
       <div class="document-title-row">
         <div>
           <p class="document-kicker">PORTFOLIO DECISION RECORD</p>
           <h1 class="document-title">{{ page.title }}</h1>
+
           {% if page.subtitle %}
             <p class="document-summary">{{ page.subtitle }}</p>
           {% endif %}
@@ -25,12 +25,15 @@
         {% if page.author %}
           <span><strong>Author:</strong> {{ page.author }}</span>
         {% endif %}
+
         {% if page.course_term %}
           <span><strong>Course:</strong> {{ page.course_term }}</span>
         {% endif %}
+
         {% if page.week_owned %}
           <span><strong>Week:</strong> {{ page.week_owned }}</span>
         {% endif %}
+
         {% if page.team %}
           <span><strong>Team:</strong> {{ page.team }}</span>
         {% endif %}
@@ -38,19 +41,17 @@
     </header>
 
     <div class="document-layout">
-
-<aside class="record-toc" aria-label="Document contents">
-  <p class="record-toc-title">IN THIS RECORD</p>
-  <nav>
-    <a href="#context">Context</a>
-    <a href="#options">Options Considered</a>
-    <a href="#decision">Decision</a>
-    <a href="#reasoning">Reasoning</a>
-    <a href="#consequences">Consequences</a>
-    <a href="#evidence">Evidence and Traceability</a>
-  </nav>
-</aside>
-
+      <aside class="record-toc" aria-label="Document contents">
+        <p class="record-toc-title">IN THIS RECORD</p>
+        <nav>
+          <a href="#context">Context</a>
+          <a href="#options">Options Considered</a>
+          <a href="#decision">Decision</a>
+          <a href="#reasoning">Reasoning</a>
+          <a href="#consequences">Consequences</a>
+          <a href="#evidence">Evidence and Traceability</a>
+        </nav>
+      </aside>
 
       <div class="document-content">
         {{ content }}
@@ -62,8 +63,9 @@
             reasoning behind the selected approach and the trade-offs that
             may need to be revisited as the system develops.
           </p>
+
           <a href="{{ '/' | relative_url }}#portfolio">
-            Return to portfolio ↑
+            Return to portfolio &uarr;
           </a>
         </div>
       </div>
