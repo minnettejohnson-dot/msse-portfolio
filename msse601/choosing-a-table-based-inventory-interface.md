@@ -14,7 +14,7 @@ decision_summary: "A table-based inventory interface with search and filters to 
 permalink: /msse601/choosing-a-table-based-inventory-interface/
 ---
 
-## 1. Context {#context}
+## 1. Context
 
 The Golden Bike Shop system requires staff to manage e-bike inventory across four store locations. Store clerks need to locate available bikes, compare their status and location, review bike details, and initiate rentals without navigating unnecessarily between screens.
 
@@ -22,7 +22,7 @@ As the Interface Design and Design Reasoning Lead, I evaluated how the inventory
 
 This decision mattered because inventory management is a frequent operational task. The interface needed to make relevant information easy to find while reducing unnecessary navigation and the risk of selecting a bike with the wrong status or location.
 
-## 2. Options {#options}
+## 2. Options
 
 ### Option 1: Card-Based Inventory Interface
 
@@ -34,7 +34,7 @@ Multiple bikes would appear in rows, with consistent columns for bike, type, sta
 
 The main disadvantage would be greater information density, which could make the screen feel crowded.
 
-## 3. Decision {#decision}
+## 3. Decision
 
 I selected the table-based inventory layout for the Golden Bike Shop inventory screen, supported by search and filter controls.
 
@@ -42,7 +42,7 @@ The table presents key bike information together so staff can compare multiple b
 
 This choice was based on the primary staff workflow rather than visual preference alone. The inventory screen needed to support quick comparison and selection, so I prioritized information visibility and efficient navigation over the more individualized presentation offered by cards.
 
-## 4. Reasoning {#reasoning}
+## 4. Reasoning
 
 I evaluated the alternatives against the system's inventory requirements and the way staff would use the interface during daily operations.
 
@@ -54,7 +54,7 @@ I also recognized that a table could become visually dense. I addressed this tra
 
 The decision was therefore a balance between comparison efficiency and information density. I accepted the denser presentation because it better supported the inventory task, while using search and filters to make the information easier to navigate.
 
-## 5. Consequences {#consequences}
+## 5. Consequences
 
 The decision provides staff with a consolidated inventory view that supports searching, filtering, comparing bike information, and accessing relevant actions. It also establishes a consistent starting point for the related Bike Details/Edit and New Rental workflows.
 
@@ -64,7 +64,7 @@ The design should therefore be revisited if usability testing shows that staff s
 
 Possible improvements could include responsive table behavior, adjustable columns, or a card-based alternative for narrow displays without abandoning the table's advantages for desktop inventory management.
 
-## Evidence and Traceability {#evidence}
+## Evidence and Traceability
 
 - **Week:** Week 4 – Project Component and UI Design.
 - **Individual Ownership:** Interface Design and Design Reasoning Lead, as identified in the Week 4 AI Use Record, Entry 4.
