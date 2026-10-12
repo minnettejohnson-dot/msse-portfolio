@@ -5,8 +5,4 @@ description: "A graduate student from Belize documenting her software engineerin
 url: "https://minnettejohnson-dot.github.io"
 baseurl: "/msse-portfolio"
 lang: "en"
-
-# Keep the custom design in index.html; no theme is specified here.
 markdown: kramdown
-plugins:
-  - jekyll-seo-tag
