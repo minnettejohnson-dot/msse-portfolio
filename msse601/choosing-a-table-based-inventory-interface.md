@@ -70,3 +70,14 @@ Possible improvements could include responsive table behavior, adjustable column
 - **Decision Location:** Section 5, Team Decision Record, Decision 1: Inventory Layout.
 - **Supporting Evidence:** Section 2, Screen 1 – Inventory Management; Section 3, Design Reasoning; and the AI Use Record, Entry 4.
 - **AI-Use Disclosure:** ChatGPT was used to compare table-based and card-based inventory designs against the project requirements and identify their respective strengths, weaknesses, and trade-offs. I used that analysis to evaluate the alternatives and strengthen the written rationale. The selected table-based design was retained because it best supported the staff workflow of comparing multiple bikes. The AI assisted with analysis; it did not replace my responsibility for evaluating the alternatives and documenting the design decision.
+
+
+## Supporting Documents and Evidence
+
+The following documents provide supporting evidence for this individual design decision and the Week 4 project deliverable.
+
+- [Week 4 Project Component and UI Design – Full Deliverable (PDF)]({{ '/msse601/week4-project-component-ui-design.pdf' | relative_url }})
+
+- [Portfolio Decision Record – Choosing a Table-Based Inventory Interface (PDF)]({{ '/msse601/choosing-a-table-based-inventory-interface.pdf' | relative_url }})
+
+
