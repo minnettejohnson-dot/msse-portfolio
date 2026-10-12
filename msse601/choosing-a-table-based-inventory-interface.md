@@ -1,4 +1,3 @@
-
 ---
 layout: decision-record
 title: "Choosing a Table-Based Inventory Interface"
