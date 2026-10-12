@@ -7,21 +7,28 @@ layout: default
 
     <header class="document-header">
       <p class="section-label">{{ page.course_short | default: 'Graduate work' | escape }}</p>
-      <h1>{{ page.title | escape }}</h1>
+      <div class="document-title-row">
+        <div>
+          <p class="document-kicker">PORTFOLIO DECISION RECORD</p>
+          <h1>{{ page.title | escape }}</h1>
+          <p class="document-subtitle">{{ page.subtitle | escape }}</p>
+        </div>
+        <div class="decision-status"><span class="status-dot" aria-hidden="true"></span>{{ page.decision_status | default: 'Documented' | escape }}</div>
+      </div>
       <p class="document-code">{{ page.record_id | escape }}</p>
-      <p class="document-subtitle">{{ page.subtitle | escape }}</p>
+      <p class="document-summary">{{ page.decision_summary | escape }}</p>
     </header>
 
     <dl class="document-meta">
       <div>
-        <dt>Name</dt>
+        <dt>Prepared by</dt>
         <dd>{{ page.author | escape }}</dd>
       </div>
       <div>
-        <dt>Course / Term</dt>
+        <dt>Course / term</dt>
         <dd>{{ page.course_term | escape }}</dd>
       </div>
-      <div>
+      <div class="meta-wide">
         <dt>Week and area owned</dt>
         <dd>{{ page.week_owned | escape }}</dd>
       </div>
@@ -31,8 +38,58 @@ layout: default
       </div>
     </dl>
 
+    <section class="architecture-card" aria-labelledby="architecture-title">
+      <div class="architecture-heading">
+        <div>
+          <p class="section-label">Architecture at a glance</p>
+          <h2 id="architecture-title">One core. One deliberately separate service.</h2>
+        </div>
+        <span class="architecture-tag">Option C</span>
+      </div>
+      <div class="architecture-diagram">
+        <div class="architecture-core">
+          <p class="diagram-label">CORE DEPLOYMENT</p>
+          <h3>Spring Boot modular monolith</h3>
+          <p class="diagram-note">BFF/API stays as a logical layer inside the core initially.</p>
+          <div class="module-grid">
+            <span>Retail</span>
+            <span>Service Booking</span>
+            <span>Identity / Authorization</span>
+          </div>
+        </div>
+        <div class="architecture-divider" aria-hidden="true">
+          <span></span><span>separate deployment boundary</span><span></span>
+        </div>
+        <div class="architecture-telemetry">
+          <p class="diagram-label">INDEPENDENT DEPLOYMENT</p>
+          <h3>Telemetry Service</h3>
+          <p class="diagram-note">Separate ingestion workload and explicit 15-minute freshness rule.</p>
+        </div>
+      </div>
+      <p class="diagram-caption">The design keeps transaction-heavy core workflows together while isolating telemetry's different workload and failure profile.</p>
+    </section>
+
+    <nav class="record-toc" aria-label="On this page">
+      <p class="record-toc-title">On this page</p>
+      <div class="record-toc-links">
+        <a href="#context-and-constraints">Context</a>
+        <a href="#options-considered">Options</a>
+        <a href="#decision">Decision</a>
+        <a href="#why-this-fits-the-requirements">Rationale</a>
+        <a href="#consequences-and-trade-offs">Trade-offs</a>
+        <a href="#when-i-would-revisit-the-decision">Review triggers</a>
+        <a href="#evidence-and-authorship">Evidence &amp; authorship</a>
+      </div>
+    </nav>
+
     <article class="document-content">
       {{ content }}
     </article>
+
+    <div class="document-endnote">
+      <span class="endnote-mark" aria-hidden="true">MJ</span>
+      <p>This record captures the reasoning behind one architectural choice—and the evidence that would make me reconsider it.</p>
+      <a href="{{ '/' | relative_url }}#portfolio">Return to the portfolio ↗</a>
+    </div>
   </div>
 </section>
