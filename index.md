@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fff9fc">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
   <meta name="description" content="Minnette Johnson is a graduate student from Belize exploring software engineering, research, and thoughtful technical decisions.">
   <title>Minnette Johnson | Graduate Portfolio</title>
   <style>
@@ -21,7 +24,7 @@
       --accent-dark: #654b78;
       --serif: Georgia, "Times New Roman", serif;
       --sans: "Segoe UI", Arial, Helvetica, sans-serif;
-      --content: 1120px;
+      --content: 1080px;
     }
 
     * { box-sizing: border-box; }
@@ -39,7 +42,7 @@
     a { color: var(--accent-dark); text-decoration-thickness: 1px; text-underline-offset: 4px; }
     a:hover { color: #a45f82; }
     a:focus-visible { outline: 3px solid var(--pink-deep); outline-offset: 4px; }
-    .container { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
+    .container { width: min(var(--content), calc(100% - 56px)); margin-inline: auto; }
     .skip-link {
       position: absolute; left: 12px; top: -60px; z-index: 10;
       background: var(--white); padding: 10px 14px; border-radius: 10px;
@@ -65,10 +68,10 @@
     .nav-links .github-link { border: 1px solid var(--lavender-deep); border-radius: 999px; padding: 8px 14px; color: var(--accent-dark); }
 
     /* Intro */
-    .hero { overflow: hidden; position: relative; padding: clamp(64px, 9vw, 112px) 0 clamp(70px, 9vw, 110px); }
+    .hero { overflow: hidden; position: relative; padding: clamp(56px, 7vw, 82px) 0 clamp(58px, 7vw, 84px); }
     .hero-grid {
-      display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(270px, .85fr);
-      align-items: center; gap: clamp(44px, 8vw, 100px);
+      display: grid; grid-template-columns: minmax(250px, .78fr) minmax(0, 1.22fr);
+      align-items: center; gap: clamp(34px, 6vw, 76px);
     }
     .eyebrow {
       display: inline-flex; align-items: center; gap: 10px;
@@ -79,11 +82,13 @@
     h1, h2, h3, p { margin-top: 0; }
     h1 {
       max-width: 680px; margin-bottom: 23px; color: var(--plum);
-      font-family: var(--serif); font-size: clamp(44px, 6.4vw, 76px);
+      font-family: var(--serif); font-size: clamp(43px, 5.4vw, 66px);
       line-height: 1.06; letter-spacing: -.045em; font-weight: 500;
     }
     h1 em { color: var(--accent); font-weight: 500; }
-    .hero-copy { max-width: 610px; color: var(--muted); font-size: clamp(16px, 1.6vw, 18px); }
+    .hero-copy { max-width: 640px; color: var(--muted); font-size: clamp(15px, 1.35vw, 17px); }
+    .hero-copy p { margin-bottom: 17px; }
+    .hero-copy p:last-child { margin-bottom: 0; }
     .hero-copy strong { color: var(--plum); font-weight: 650; }
     .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: 30px; }
     .primary-link {
@@ -94,7 +99,7 @@
     .primary-link:hover { color: white; background: var(--accent-dark); transform: translateY(-2px); }
     .text-link { font-size: 13px; font-weight: 650; text-decoration: none; }
 
-    .portrait-wrap { position: relative; width: min(100%, 360px); justify-self: center; }
+    .portrait-wrap { position: relative; width: min(100%, 340px); justify-self: center; }
     .portrait-wrap::before {
       content: ""; position: absolute; inset: -18px 22px 22px -18px;
       background: var(--lavender); border-radius: 48% 48% 28px 28px; transform: rotate(-4deg);
@@ -104,7 +109,7 @@
       border-radius: 50%; background: var(--pink); z-index: 0;
     }
     .portrait-frame {
-      position: relative; z-index: 1; height: 410px; overflow: hidden;
+      position: relative; z-index: 1; height: 390px; overflow: hidden;
       border: 8px solid var(--white); border-radius: 48% 48% 22px 22px;
       background: linear-gradient(150deg, #f8e8f0, #e6ddf2 70%, #f9f2f6);
       box-shadow: 0 20px 55px rgba(81, 56, 87, .10);
@@ -117,7 +122,7 @@
     }
     .portrait-placeholder .initials { display: grid; place-items: center; width: 110px; height: 110px; margin: 0 auto 18px; border-radius: 50%; background: rgba(255,255,255,.68); font-family: var(--serif); font-size: 40px; color: var(--accent-dark); }
     .portrait-placeholder p { font-size: 12px; line-height: 1.5; color: var(--muted); }
-    .photo-note { margin: 18px 0 0; text-align: center; color: var(--muted); font-size: 11px; position: relative; z-index: 1; }
+    .photo-note { max-width: 320px; margin: 16px auto 0; text-align: center; color: var(--muted); font-size: 11px; position: relative; z-index: 1; }
 
     /* Small personal detail strip */
     .personal-strip { background: linear-gradient(100deg, #f4edf9 0%, #fff0f5 100%); border-block: 1px solid #efe4ef; }
@@ -126,8 +131,8 @@
     .personal-strip span::before { content: "✧"; color: #b77999; font-size: 16px; }
 
     /* Shared sections */
-    section.content-section { padding: clamp(66px, 8vw, 100px) 0; }
-    .section-heading { max-width: 720px; margin-bottom: 38px; }
+    section.content-section { padding: clamp(54px, 6.5vw, 78px) 0; }
+    .section-heading { max-width: 720px; margin-bottom: 30px; }
     .section-label { margin-bottom: 12px; color: var(--accent-dark); font-size: 11px; font-weight: 750; letter-spacing: .17em; text-transform: uppercase; }
     h2 { color: var(--plum); font-family: var(--serif); font-size: clamp(33px, 4.3vw, 48px); font-weight: 500; line-height: 1.16; letter-spacing: -.03em; margin-bottom: 16px; }
     .section-intro { max-width: 660px; color: var(--muted); margin-bottom: 0; }
@@ -135,8 +140,8 @@
     /* Decision record */
     .records-section { background: var(--white); border-block: 1px solid var(--line); }
     .record {
-      display: grid; grid-template-columns: 66px minmax(0, 1fr) auto;
-      gap: 24px; align-items: start; padding: 30px 0;
+      display: grid; grid-template-columns: 52px minmax(0, 1fr) auto;
+      gap: 20px; align-items: start; padding: 25px 0;
       border-top: 1px solid var(--line);
     }
     .record-number { color: #b789a1; font-family: var(--serif); font-size: 24px; line-height: 1.4; }
@@ -148,19 +153,20 @@
 
     /* Philosophy */
     .philosophy-section { position: relative; }
-    .philosophy-layout { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(40px, 9vw, 110px); align-items: start; }
+    .philosophy-layout { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: clamp(32px, 6vw, 78px); align-items: start; }
     .philosophy-quote {
       margin: 0; padding: 28px 30px 30px; border-radius: 4px 28px 4px 28px;
       background: linear-gradient(135deg, #f0e7f8, #fff0f5);
       color: var(--plum); font-family: var(--serif); font-size: clamp(24px, 3vw, 33px); line-height: 1.42;
     }
     .philosophy-quote::before { content: "“"; display: block; color: #b77999; font-size: 46px; line-height: .8; margin-bottom: 12px; }
+    .quote-spacer { height: 22px; }
     .philosophy-copy p { color: var(--muted); }
     .philosophy-copy p:last-child { margin-bottom: 0; }
 
     /* About / future */
     .about-section { background: #fff5f9; border-top: 1px solid #f0e2eb; }
-    .about-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, .7fr); gap: clamp(40px, 8vw, 95px); align-items: start; }
+    .about-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, .7fr); gap: clamp(32px, 6vw, 72px); align-items: start; }
     .about-copy p { max-width: 690px; color: var(--muted); }
     .future-note { padding: 26px 27px; background: rgba(255,255,255,.74); border-left: 3px solid var(--pink-deep); }
     .future-note .mini-label { margin-bottom: 10px; color: var(--accent-dark); font-size: 10px; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
@@ -178,10 +184,11 @@
       .nav { padding: 16px 0; min-height: unset; align-items: flex-start; flex-direction: column; gap: 13px; }
       .nav-links { width: 100%; gap: 16px 20px; flex-wrap: wrap; }
       .nav-links a { font-size: 12px; }
-      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+      .hero-text { max-width: 680px; }
       .hero-copy { max-width: 100%; }
-      .portrait-wrap { width: min(78%, 320px); }
-      .portrait-frame { height: 365px; }
+      .portrait-wrap { width: min(78%, 310px); }
+      .portrait-frame { height: 350px; }
       .record { grid-template-columns: 36px minmax(0, 1fr); gap: 14px; }
       .record-link { grid-column: 2; justify-self: start; margin-top: 7px; }
       .philosophy-layout, .about-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -189,7 +196,7 @@
     }
     @media (max-width: 460px) {
       h1 { font-size: 45px; }
-      .hero { padding-top: 54px; }
+      .hero { padding-top: 42px; padding-bottom: 52px; }
       .personal-strip-inner { justify-content: flex-start; gap: 7px 18px; }
       .record h3 { font-size: 22px; }
       .footer-row { align-items: flex-start; flex-direction: column; }
@@ -222,19 +229,6 @@
   <main id="main">
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-text">
-          <div class="eyebrow">Graduate Student · Software Engineering</div>
-          <h1>Hi, I’m <em>Minnette.</em></h1>
-          <div class="hero-copy">
-            <p>I’m a <strong>graduate student from Belize</strong>, interested in how thoughtful software engineering can solve real problems and how the decisions behind a system shape the people who use it.</p>
-            <p>I’m currently pursuing a <strong>Master of Science in Software Engineering (MSSE) at <a href="https://www.regis.edu/academics/majors-and-programs/graduate/software-engineering-ms" target="_blank" rel="noopener noreferrer">Regis University</a></strong>. This site brings together selected coursework, the technical decisions I make, and the lessons I take with me as I grow. I’m interested not only in how software works, but in why one approach makes more sense than another—and who benefits from the choices we make.</p>
-          </div>
-          <div class="hero-actions">
-            <a class="primary-link" href="#portfolio">Explore my work</a>
-            <a class="text-link" href="#philosophy">A little about how I think →</a>
-          </div>
-        </div>
-
         <div class="portrait-wrap">
           <div class="portrait-frame">
             <img src="minnette.jpg" alt="Portrait of Minnette Johnson" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
@@ -246,6 +240,19 @@
             </div>
           </div>
           <p class="photo-note">A little corner of my journey, from Belize and beyond.</p>
+        </div>
+
+        <div class="hero-text">
+          <div class="eyebrow">Graduate Student · From Belize</div>
+          <h1>Hi, I’m <em>Minnette.</em></h1>
+          <div class="hero-copy">
+            <p>I’m a <strong>graduate student from Belize</strong>, interested in how thoughtful software engineering can solve real problems and how the decisions behind a system shape the people who use it.</p>
+            <p>I’m currently pursuing a <strong>Master of Science in Software Engineering (MSSE) at <a href="https://www.regis.edu/academics/majors-and-programs/graduate/software-engineering-ms" target="_blank" rel="noopener noreferrer">Regis University</a></strong>. This site brings together selected coursework, the technical decisions I make, and the lessons I take with me as I grow. I’m interested not only in how software works, but in why one approach makes more sense than another—and who benefits from the choices we make.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-link" href="#portfolio">Explore my work</a>
+            <a class="text-link" href="#philosophy">A little about how I think →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -288,7 +295,7 @@
         </div>
         <div class="philosophy-copy">
           <blockquote class="philosophy-quote">I want to remember not only what I chose, but why it made sense at the time.</blockquote>
-          <div style="height: 24px"></div>
+          <div class="quote-spacer" aria-hidden="true"></div>
           <p>Software engineering asks us to make choices, often without a perfect option. I’m learning to slow down enough to ask better questions, compare alternatives fairly, and think about what a decision means beyond the code itself.</p>
           <p>For me, documenting the process is part of the learning. It gives me something honest to look back on: what I understood, what I missed, and how my thinking changes as I gain experience. I don’t expect to have every answer. I do want to stay curious, be willing to reconsider, and keep getting better at the work.</p>
         </div>
