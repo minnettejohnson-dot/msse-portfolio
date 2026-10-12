@@ -8,7 +8,6 @@ author: "Minnette Johnson"
 course_term: "MSSE 601 – Software Engineering Fundamentals | Fall 2026"
 week_owned: "Week 4 – Project Component and UI Design"
 team: "SEF 1 – NCM Innovators"
-decision_status: "Selected"
 decision_summary: "A table-based inventory interface with search and filters to help staff compare e-bikes across four store locations."
 permalink: /msse601/choosing-a-table-based-inventory-interface/
 ---
